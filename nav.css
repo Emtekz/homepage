@@ -1,0 +1,38 @@
+/* CSS Anpassungen: Navbar */
+
+nav {
+    background-color: #fafafa;
+    background-attachment: fixed;
+
+    text-align: center;
+    white-space: nowrap;
+    /* verhindert Zeilenumbrüche */
+    
+    padding: 5px 300px;
+
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "nav1 nav2 nav3 nav4 nav5";
+}
+
+nav a {
+    padding-left: 69px;
+    padding-right: 69px;
+    font-weight: bold;
+    font-size: 25px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+nav a:hover {
+    background-color: #dfdfdf;
+    color: rgb(15, 0, 149);
+
+    transition: 0.5s;
+}
+
