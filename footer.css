@@ -1,0 +1,19 @@
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    background-color: rgb(196, 196, 196);
+    padding: 25px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

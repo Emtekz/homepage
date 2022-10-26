@@ -1,0 +1,25 @@
+.aufbau {
+    background: white;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.aufbau h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+/*  
+   <section class="aufbau">
+        <h1>
+            Die Seite befindet sich aktuell noch im Aufbau!<br>
+            Danke für Ihr Verständnis!
+        </h1>
+
+        <h2>
+            <a href="index.html">Zurück zur Startseite</a>
+        </h2>
+    </section>
+     */
