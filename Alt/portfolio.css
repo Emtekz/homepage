@@ -4,7 +4,7 @@
 .portfolio {
     border-top: 2px solid black;
     text-align: center;
-    background-image: url("Images/Lilli.jpg");
+    background-image: url("../Images/Lilli.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
