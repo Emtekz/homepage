@@ -2,22 +2,23 @@
 
 nav {
     background-color: #fafafa;
-    background-attachment: fixed;
+
+    width: 100vw;
 
     text-align: center;
     white-space: nowrap;
     /* verhindert Zeilenumbrüche */
-    
+
     padding: 5px 300px;
 
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "nav1 nav2 nav3 nav4 nav5";
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "nav1 nav2 nav3 nav4 nav5";
 }
 
 nav a {
@@ -35,4 +36,3 @@ nav a:hover {
 
     transition: 0.5s;
 }
-
