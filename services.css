@@ -1,0 +1,16 @@
+/* CSS Anpassungen: Services */
+
+.services {
+    text-align: center;
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "inf cnt"
+}
+
+.services h2 {
+    background-color: rgb(255, 255, 255, 0.75);
+}
