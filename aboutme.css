@@ -15,9 +15,14 @@
 
 .right_am {
     background-color: #fafafa;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    padding: 150px 50px;
 }
 
 .left_am {
+    padding-top: 25px;
     text-align: center;
     background-color: rgb(255, 255, 255, 0.75);
 }
@@ -27,4 +32,16 @@
     width: 500px;
     border: 10px solid black;
     clip-path: circle(45% at center);
+}
+
+.more_me {
+    background-color: rgb(163, 186, 255);
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px 15px;
+    transition: 1s;
+}
+
+.more_me:hover {
+background-color: rgb(163, 186, 255, 0.5);
 }
