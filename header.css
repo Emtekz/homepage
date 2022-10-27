@@ -1,10 +1,10 @@
 /* CSS Anpassungen: Header */
 
 header {
+    width: 100;
     background-color: rgb(255, 255, 255, 0.75);
     text-align: center;
     padding: 25px 0;
-    width: 100vw;
 }
 
 header h1 {
@@ -14,4 +14,14 @@ header h1 {
 header span {
     font-size: 90px;
     color: #c62828;
+}
+
+@media (max-width: 1250px){
+    header h1{
+        font-size: 50px;
+    }
+
+    header span{
+        font-size: 75px;
+    }
 }
