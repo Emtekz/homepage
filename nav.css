@@ -2,7 +2,6 @@
 
 nav {
     background-color: #fafafa;
-
     width: 100%;
 
     display: inline-block;
@@ -14,7 +13,7 @@ nav {
 
 .nav_container {
     padding: 5px 0;
-    margin-left: 0Fpx;
+    margin-left: 0px;
 
     display: grid;
     grid-auto-columns: 1fr;
@@ -27,8 +26,8 @@ nav {
 }
 
 nav a {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 1vw;
+    padding-right: 1vw;
     font-weight: bold;
     font-size: 25px;
     border-left: 1px solid black;
