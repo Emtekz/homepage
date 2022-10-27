@@ -3,7 +3,7 @@
 nav {
     background-color: #fafafa;
 
-    width: 100;
+    width: 100vw;
 
     display: inline-block;
 
@@ -13,11 +13,13 @@ nav {
 }
 
 .nav_container {
-    padding: 5px 325px;
+    padding: 5px 0;
+    margin: 0 300px;
+
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas:
