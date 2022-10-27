@@ -3,11 +3,12 @@
 .portfolio {
     border-top: 1px solid black;
     width: 100%;
+    text-align: center;
 }
 
 .portfolio h2 {
     background-color: #a6a6a6;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bolder;
     text-align: center;
     padding: 25px 0;
@@ -33,4 +34,25 @@
 .images_p img {
     max-height: 500px;
     max-width: 95%;
+}
+
+.morepics {
+    background-color: #fefefe;
+    padding: 25px 0;
+}
+
+.morepics span {
+    padding-top: 50px;
+}
+
+.morepics a {
+    background-color: rgb(163, 186, 255);
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px 15px;
+    transition: 1s;
+}
+
+.morepics a:hover {
+    background-color: rgb(163, 186, 255, 0.5);
 }
