@@ -8,9 +8,11 @@
     <title>Work in Progress</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="general_settings.css">
+    <link rel="stylesheet" href="generalsettings.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <!-- Die Webseite selbst existiert schon -->
@@ -29,8 +31,8 @@
     <nav>
         <div class="nav_container">
 
-            <a href="" id="nav1">Startseite</a>
-            <a href="" id="nav2">Über Mich</a>
+            <a href="index.html" id="nav1">Startseite</a>
+            <a href="#about_me_section" id="nav2">Über Mich</a>
             <a href="" id="nav3">Portfolio</a>
             <a href="" id="nav4">Infos</a>
             <a href="" id="nav5">Kontakt</a>
@@ -38,7 +40,18 @@
     </nav>
 
     <main>
-        <section class="about_me">
+        <section class="about_me" id="about_me_section">
+            <div class="left_am" id="am_l">
+                <h2>
+                    Über Mich
+                </h2>
+
+                <img src="Images/Paul.jpg" alt="">
+            </div>
+
+            <div class="right_am" id="am_r">
+
+            </div>
         </section>
 
         <section class="portfolio">
@@ -49,9 +62,9 @@
     </main>
 
     <footer>
-        <li>Copyright. (c) Paul Reiter</li>
-        <li><a href="">Impressum</a></li>
-        <li><a href="">Datenschutz</a></li>
+        <li id="cr">Copyright: (c) Paul Reiter</li>
+        <li class="border_f" id="imp"><a href="">Impressum</a></li>
+        <li class="border_f" id="datsch"><a href="">Datenschutz</a></li>
     </footer>
 </body>
 

@@ -1,0 +1,30 @@
+/* CSS Anpassungen: Über Mich */
+
+.about_me {
+
+    margin-top: 771px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "am_l am_r";
+}
+
+.right_am {
+    background-color: #fafafa;
+}
+
+.left_am {
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.75);
+}
+
+.left_am img {
+    margin-top: 25px;
+    width: 500px;
+    border: 10px solid black;
+    clip-path: circle(45% at center);
+}
