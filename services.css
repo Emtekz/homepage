@@ -2,7 +2,6 @@
 
 .services {
     background-color: rgb(255, 255, 255, 0.75);
-    padding-top: 30px;
     padding-bottom: 50px;
 
     text-align: center;
@@ -16,6 +15,12 @@
     grid-template-areas: 
       "info cont"
       "infotext socials"; 
+}
+
+.services h2 {
+    background-color: #a6a6a6;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .infotext_s {
