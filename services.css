@@ -18,6 +18,10 @@
       "infotext socials"; 
 }
 
+.infotext_s {
+font-weight: bold;
+}
+
 .contact {
     border-left: 1px solid black;
 }
