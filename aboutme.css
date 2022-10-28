@@ -30,8 +30,11 @@
 .left_am img {
     margin-top: 25px;
     width: 500px;
+    
     border: 10px solid black;
+
     clip-path: circle(45% at center);
+    /* Schneidet das Bild kreisförmig zu */
 }
 
 .more_me {
@@ -39,7 +42,8 @@
     border-radius: 10px;
     border: 2px solid black;
     padding: 5px 15px;
-    transition: 1s;
+
+    transition: 0.75s;
 }
 
 .more_me:hover {

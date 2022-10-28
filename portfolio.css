@@ -39,7 +39,8 @@
 
 .morepics {
     background-color: #fefefe;
-    padding: 25px 0;
+    font-weight: bold;
+    padding: 40px 0;
 }
 
 .morepics a {
@@ -47,7 +48,7 @@
     border-radius: 10px;
     border: 2px solid black;
     padding: 5px 15px;
-    transition: 1s;
+    transition: 0.75s;
 }
 
 .morepics a:hover {
