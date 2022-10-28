@@ -3,9 +3,10 @@
 .services {
     background-color: rgb(255, 255, 255, 0.75);
     padding-bottom: 50px;
-
+    
     text-align: center;
-
+    
+    /* Großes Grid */
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-auto-rows: 1fr; 
@@ -36,6 +37,7 @@ font-weight: bold;
 
     font-weight: bolder;
 
+    /* Kleines Grid */
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
