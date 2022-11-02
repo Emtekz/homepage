@@ -225,7 +225,7 @@
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
         grid-auto-columns: 1fr;
         grid-auto-rows: 1fr;
         gap: 0px 0px;
@@ -248,18 +248,41 @@
         width: auto;
     }
 
-    .{
+    .portfolio {
+        background-color: rgb(255, 255, 255, 0.75);
+        text-align: center;
         width: 100%;
-    
+
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+        grid-auto-columns: 1fr;
+        /* grid-auto-rows: fr; */
+        gap: 0px 0px;
+        grid-auto-flow: unset;
+        grid-template-areas:
+            "headline_p"
+            "images_p"
+            "headline_w"
+            "images_w"
+            "headline_e"
+            "images_e"
+            "headline_s"
+            "images_s";
+    }
+
+    /* .headline_p {
+        height: 100%;
+        padding-top: 50px;
+        text-align: center;
+
+        display: grid;
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "."
-            "hl_p"
-            ".";
+            "hl_p";
         grid-area: headline_p;
-    }
+    } */
 }
