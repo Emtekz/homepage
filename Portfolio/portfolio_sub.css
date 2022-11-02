@@ -28,6 +28,8 @@
 
 /* Portraits */
 .headline_p {
+    width: 100%;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -41,6 +43,8 @@
 }
 
 .images_p {
+    width: 100%;
+
     background-color: white;
     justify-items: center;
     padding: 15px 0;
@@ -72,6 +76,8 @@
 
 /* Hochzeit */
 .headline_w {
+    width: 100%;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -85,6 +91,8 @@
 }
 
 .images_w {
+    width: 100%;
+
     background-color: white;
     justify-items: center;
     padding: 15px 0;
@@ -116,6 +124,8 @@
 
 /* Events */
 .headline_e {
+    width: 100%;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -129,6 +139,8 @@
 }
 
 .images_e {
+    width: 100%;
+
     background-color: white;
     justify-items: center;
     padding: 15px 0;
@@ -160,6 +172,8 @@
 
 /* Sonstiges */
 .headline_s {
+    width: 100%;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -173,6 +187,8 @@
 }
 
 .images_s {
+    width: 100%;
+
     background-color: white;
     justify-items: center;
     padding: 15px 0;
@@ -201,3 +217,49 @@
 }
 
 /* ------------------------------------------------------- */
+@media (max-width: 1370px) {
+    .portfolio {
+        background-color: rgb(255, 255, 255, 0.75);
+        text-align: center;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "headline_p"
+            "images_p"
+            "headline_w"
+            "images_w"
+            "headline_e"
+            "images_e"
+            "headline_s"
+            "images_s";
+    }
+}
+
+@media (max-width: 950px) {
+    .portfolio img {
+        height: 100%;
+        width: auto;
+    }
+
+    .{
+        width: 100%;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "."
+            "hl_p"
+            ".";
+        grid-area: headline_p;
+    }
+}
