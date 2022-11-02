@@ -1,0 +1,38 @@
+/* CSS Anpassungen: Über Mich - Subpage */
+
+.container {
+    text-align: center;
+    margin-top: 35%;
+
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "rand1 text rand2";
+}
+
+.rand1 {
+    grid-area: rand1;
+    background: rgb(255, 255, 255, 0.75);
+}
+
+.rand2 {
+    grid-area: rand2;
+    background: rgb(255, 255, 255, 0.75);
+}
+
+.text {
+    grid-area: text;
+    background: rgb(196, 196, 196);
+    padding: 0 25px;
+    padding-bottom: 35px;
+}
+
+.text h2 {
+    font-weight: bolder;
+    text-decoration: underline;
+    padding: 15px 0;
+}
