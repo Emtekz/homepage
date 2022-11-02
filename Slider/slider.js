@@ -4,10 +4,10 @@ indikatoren[0].classList.add("aktiv");
 const slides = document.getElementsByClassName("slide");
 slides[0].classList.add("aktiv");
 
-var aktuellerIndex = 0;
+let aktuellerIndex = 0;
 
 function umschalten(anzahl) {
-    var neuerIndex = aktuellerIndex + anzahl;
+    let neuerIndex = aktuellerIndex + anzahl;
 
     if(neuerIndex < 0) {
         neuerIndex = slides.length -1;
@@ -29,3 +29,7 @@ function springeZuEintrag(neuerIndex) {
 
     aktuellerIndex = neuerIndex;
 }
+
+setInterval(() => {
+    umschalten(1);
+}, 5000);

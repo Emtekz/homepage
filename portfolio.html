@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="Portfolio/portfolio_sub.css">
-    <link rel="stylesheet" href="Portfolio/section.css">
+    <link rel="stylesheet" href="Slider/slider.css">
     <link rel="stylesheet" href="footer.css">
 
     <style>
@@ -47,8 +47,56 @@
         </div>
     </nav>
 
-    <section>
-        <h2>*Hier könnte ein Slider her*</h2>
+    <section class="imageroulette">
+        <div class="slideshow">
+
+            <div class="slide">
+                <img src="Images/Lilli.jpg" alt="Lilli" class="slide-bild">
+                <div class="slide-textbereich">
+                    <h3 class="slide-ueberschrift">Lilli in Höchstform!</h3>
+                    <p class="slide-beschreibung">Hier findest du Lilli, ein super Model!</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="Images/Fotopaul.jpg" alt="Fotograf" class="slide-bild">
+                <div class="slide-textbereich">
+                    <h3 class="slide-ueberschrift">Der schönste Mann der Welt!</h3>
+                    <p class="slide-beschreibung">Das ist der Schönste Mann der Welt! Ich selbst und somit auch der Betreiber der Webseite!</p>
+                </div>  
+            </div>
+
+            <div class="slide">
+                <img src="Images/Nacht.jpg" alt="Halloween bei Nacht" class="slide-bild">
+                <div class="slide-textbereich">
+                    <h3 class="slide-ueberschrift">Happy Halloween!</h3>
+                    <p class="slide-beschreibung">Ich wünsche jedem ein schönes Halloween! Viel Spaß beim Gruseln!</p>
+                </div>  
+            </div>
+
+            <div class="slide">
+                <img src="Images/Tag.jpg" alt="Halloween bei Tag" class="slide-bild">
+                <div class="slide-textbereich">
+                    <h3 class="slide-ueberschrift">Happy Halloween!</h3>
+                    <p class="slide-beschreibung">Halloween bei Tag kann auch Unterhaltsam sein!</p>
+                </div>  
+            </div>
+
+            <a class="pfeil pfeil-links" onclick="umschalten(-1)">
+                <span>&#10094;</span>
+            </a>
+
+            <a class="pfeil pfeil-rechts" onclick="umschalten(1)">
+                <span>&#10095;</span>
+            </a>
+
+            <ol class="indikatorenliste">
+                <li class="indikator" onclick="springeZuEintrag(0)">&#8226;</li>
+                <li class="indikator" onclick="springeZuEintrag(1)">&#8226;</li>
+                <li class="indikator" onclick="springeZuEintrag(2)">&#8226;</li>
+                <li class="indikator" onclick="springeZuEintrag(3)">&#8226;</li>
+            </ol>
+        </div>
     </section>
 
     <main>
@@ -133,6 +181,8 @@
         <li class="border_f" id="imp"><a href="">Impressum</a></li>
         <li class="border_f" id="datsch"><a href="">Datenschutz</a></li>
     </footer>
+
+    <script src="Slider/slider.js"></script>
 </body>
 
 </html>
