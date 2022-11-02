@@ -1,0 +1,204 @@
+/* CSS Anpassungen: Portfolio Subpage */
+
+.portfolio img {
+    width: auto;
+    max-height: 300px;
+}
+
+.portfolio {
+    background-color: rgb(255, 255, 255, 0.75);
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "headline_p images_p"
+        "images_w headline_w"
+        "headline_e images_e"
+        "images_s headline_s";
+}
+
+/* --------------------------------------------------- */
+
+/* Portraits */
+.headline_p {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "rand1"
+        "hl_p"
+        "rand2";
+    grid-area: headline_p;
+}
+
+.images_p {
+    background-color: brown;
+    justify-items: center;
+    padding: 15px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". ."
+        ". .";
+    grid-area: images_p;
+}
+
+.hl_p {
+    grid-area: hl_p;
+}
+
+.rand1 {
+    grid-area: rand1;
+}
+
+.rand2 {
+    grid-area: rand2;
+}
+
+/* --------------------------------------------------- */
+
+/* Hochzeit */
+.headline_w {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "rand11"
+        "hl_w"
+        "rand21";
+    grid-area: headline_w;
+}
+
+.images_w {
+    background-color: brown;
+    justify-items: center;
+    padding: 15px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". ."
+        ". .";
+    grid-area: images_w;
+}
+
+.hl_w {
+    grid-area: hl_w;
+}
+
+.rand11 {
+    grid-area: rand11;
+}
+
+.rand21 {
+    grid-area: rand21;
+}
+
+/* --------------------------------------------------- */
+
+/* Events */
+.headline_e {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "rand12"
+        "hl_e"
+        "rand22";
+    grid-area: headline_e;
+}
+
+.images_e {
+    background-color: brown;
+    justify-items: center;
+    padding: 15px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". ."
+        ". .";
+    grid-area: images_e;
+}
+
+.hl_e {
+    grid-area: hl_e;
+}
+
+.rand12 {
+    grid-area: rand12;
+}
+
+.rand22 {
+    grid-area: rand22;
+}
+
+/* --------------------------------------------------- */
+
+/* Sonstiges */
+.headline_s {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "rand13"
+        "hl_s"
+        "rand23";
+    grid-area: headline_s;
+}
+
+.images_s {
+    background-color: brown;
+    justify-items: center;
+    padding: 15px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". ."
+        ". .";
+    grid-area: images_s;
+}
+
+.hl_s {
+    grid-area: hl_s;
+}
+
+.rand13 {
+    grid-area: rand13;
+}
+
+.rand23 {
+    grid-area: rand23;
+}
+
+/* ------------------------------------------------------- */
