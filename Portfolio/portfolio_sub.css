@@ -8,6 +8,7 @@
 .portfolio {
     background-color: rgb(255, 255, 255, 0.75);
     text-align: center;
+    width: 100%;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
