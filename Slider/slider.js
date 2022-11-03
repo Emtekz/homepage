@@ -32,4 +32,4 @@ function springeZuEintrag(neuerIndex) {
 
 setInterval(() => {
     umschalten(1);
-}, 5000);
+}, 5500);
