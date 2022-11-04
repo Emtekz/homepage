@@ -1,0 +1,21 @@
+/* CSS Anpassung: Pfeil */
+
+.pfeil img{
+    padding: 23px 4px;
+    border-radius: 85%;
+    width: 75px;
+    background-color: rgb(255, 255, 255, 0.6);
+
+    transition: 0.5s;
+}
+
+.pfeil {
+    display: flex;
+    justify-content: center;
+    padding: 150px 0;
+    margin-top: 433px;
+}
+
+.pfeil img:hover {
+    background-color: white;
+}
