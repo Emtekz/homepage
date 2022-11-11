@@ -1,7 +1,7 @@
 /* CSS Anpassung: Pfeil */
 
 .pfeil img{
-    padding: 23px 4px;
+    padding: 22px 4px;
     border-radius: 85%;
     width: 75px;
     background-color: rgb(255, 255, 255, 0.6);
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     padding: 150px 0;
-    margin-top: 433px;
+    margin-top: 430px;
 }
 
 .pfeil img:hover {
