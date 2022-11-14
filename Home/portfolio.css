@@ -35,6 +35,8 @@
 .images_p img {
     max-height: 500px;
     max-width: 95%;
+
+    transition: 1s;
 }
 
 .morepics {
@@ -53,4 +55,9 @@
 
 .morepics a:hover {
     background-color: rgb(163, 186, 255, 0.5);
+}
+
+.images_p img:hover {
+    opacity: 0%;
+    transform: rotate(360deg);
 }

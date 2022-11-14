@@ -4,6 +4,9 @@ nav {
     background-color: #fafafa;
     width: 100%;
 
+    /* position: sticky;
+    top: 0; */
+
     display: inline-block;
 
     text-align: center;
