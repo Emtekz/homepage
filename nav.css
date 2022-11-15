@@ -19,7 +19,7 @@ nav {
     margin-left: 0px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
     /* gap: 0px 0px; */
     /* grid-template-areas:
         "nav1 nav2 nav3 nav4 nav5"; */
@@ -39,4 +39,32 @@ nav a:hover {
     color: rgb(15, 0, 149);
 
     transition: 0.5s;
+}
+
+@media (max-width: 1014px) {
+    .nav_container {
+        grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+    }
+
+    #nav1 {
+        border-left: none;
+    }
+
+    #nav2 {
+        border: none;
+    }
+
+    #nav3 {
+        border-left: none;
+    }
+
+    #nav4 {
+        border: none;
+
+    }
+
+    #nav5 {
+        border: none;
+        width: 100vw;
+    }
 }
