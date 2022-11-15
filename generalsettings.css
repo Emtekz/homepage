@@ -13,7 +13,7 @@
 /* Body */
 @media (max-width: 400px) {
     body {
-        background-position: center;
+        background-size: 100vh;
     }
 }
 
