@@ -44,6 +44,7 @@ nav a:hover {
 @media (max-width: 1014px) {
     .nav_container {
         grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+        padding: 15px 0px;
     }
 
     #nav1 {
