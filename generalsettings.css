@@ -11,11 +11,6 @@
 }
 
 /* Body */
-@media (max-width: 400px) {
-    body {
-        background-image: url("Images/Fotopaul_komp_hk.jpg");
-    }
-}
 
 /* Headlines */
 h1 {
