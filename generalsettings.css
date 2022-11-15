@@ -11,7 +11,11 @@
 }
 
 /* Body */
-
+@media (max-width: 400px) {
+    body {
+        background-position: center;
+    }
+}
 
 /* Headlines */
 h1 {
