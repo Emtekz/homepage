@@ -13,7 +13,7 @@
 /* Body */
 @media (max-width: 400px) {
     body {
-        min-height: 100vh;
+        background-image: url("Images/Fotopaul_komp_hk.jpg");
     }
 }
 
