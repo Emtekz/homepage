@@ -56,8 +56,3 @@
 .morepics a:hover {
     background-color: rgb(163, 186, 255, 0.5);
 }
-
-.images_p img:hover {
-    opacity: 0%;
-    transform: rotate(360deg);
-}
