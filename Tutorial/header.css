@@ -1,0 +1,142 @@
+/* CSS Portfolio Webseite: Header Formatierungen*/
+/* Änderungen am Header*/
+
+/* Header allgemein */
+/* padding: 'oben + unten', 'links + rechts' => Würde es funktionieren! */
+/* gap: _px;  erzeugt eine Lücke zweischen den Containern (Text und Bild) */
+
+/* flex-wrap: wrap; macht es möglich, dass sich die Seite auf Bildschirmgrößen anpasst */
+header {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    flex-wrap: wrap;
+}
+
+/* Text im Header */
+.header-text {
+    width: 850px;
+}
+
+/* Bildsektion im Header */
+/* Hier wird das Bild + alles in der Klasse formatiert */
+
+/* max-heigt/-width legt fest, dass das Bild nicht größer als (BSP 80vw)
+   80% der Displaygröße sein soll */
+
+/* overflow: hidden bestimmt, dass das Bild abgeschnitten wird */
+/* border-radius macht aus dem Bild einen Kreis */
+/* border: _px erstellt den Rand des Bildes &&
+   solid bestimmt, das diese durchgezogen ist (+ Farbe) */
+.header-image {
+    height: 600px;
+    width: 600px;
+
+    max-height: 80vw;
+    max-width: 80vw;
+
+    overflow: hidden;
+    border-radius: 50%;
+    border: 20px solid var(--main-brand-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bild im Header */
+/* Hier wird NUR das Bild formatiert */
+.header-image img {
+    width: 100%;
+}
+
+/* Navigationsleiste */
+nav {
+    margin-bottom: 120px;
+}
+
+/* Navigationsleiste: Sektion <ul> */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigationsleiste: Links/ Sektion <a> */
+nav a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    position: relative;
+    padding: 3px;
+}
+
+nav a:hover {
+    color: var(--text-color);
+}
+
+/* Erzeugt den blauen Strich */
+/* transition animiert den Strich */
+nav a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+
+/* Lässt ihn nur Anzeigen, wenn der Mauszeiger über dem Link ist */
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Die Checkbox wird versteckt */
+#toggle_button {
+    display: none;
+}
+
+label[for="toggle_button"] {
+    display: none;
+}
+
+/* Hamburger Icon wird vergrößert */
+label[for="toggle_button"] span {
+    font-size: 40px;
+}
+
+/* toggle_button:checked =
+   Wenn toggle_button == true -> zeige Links an */
+
+/* border radius wirkt sich hier nur auf die Ecke rechts-unten aus */
+@media(max-width: 800px) {
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--secondary-color);
+        padding: 15px;
+        border-radius: 0 0 25px 0;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    #toggle_button:checked~ul {
+        display: flex;
+    }
+
+    label[for="toggle_button"] {
+        display: block;
+    }
+}
