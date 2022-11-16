@@ -13,9 +13,21 @@
     display: flex;
     justify-content: center;
     padding: 150px 0;
-    margin-top: 430px;
+    margin-top: 36vh;
 }
 
 .pfeil img:hover {
     background-color: white;
+}
+
+@media (max-width: 1015px) {
+    .pfeil {
+        margin-top: 25vh;
+    }
+}
+
+@media (max-width: 550px) {
+    .pfeil {
+        margin-top: 32vh;
+    }
 }
