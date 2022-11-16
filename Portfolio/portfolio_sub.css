@@ -5,6 +5,10 @@
     max-height: 305px;
 }
 
+.portfolio a {
+    transition: .5s;
+}
+
 .portfolio {
     background-color: rgb(255, 255, 255, 0.75);
     text-align: center;
@@ -121,6 +125,11 @@
 }
 
 /* --------------------------------------------------- */
+
+.portfolio a:hover {
+    text-decoration: underline;
+    color: rgb(106, 106, 106);
+}
 
 /* Events */
 .headline_e {
